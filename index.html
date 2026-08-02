@@ -62,7 +62,11 @@ nav>a:hover::after{right:0}
 .btn:hover .ar{transform:translateX(3px)}
 .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line2)}
 .btn.ghost:hover{border-color:var(--ink);box-shadow:none;background:rgba(255,255,255,.03)}
-@media(max-width:920px){nav>a{display:none}}
+@media(max-width:920px){
+  nav>a{display:none}
+  .wordmark b{font-size:.92rem}
+  header nav .btn{font-size:.78rem;padding:9px 14px;white-space:nowrap}
+}
 
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:100dvh;display:flex;align-items:center;overflow:hidden;
@@ -95,6 +99,20 @@ nav>a:hover::after{right:0}
 .rise{opacity:0;transform:translateY(26px);animation:rise .9s cubic-bezier(.16,1,.3,1) forwards}
 .rise.d1{animation-delay:.08s}.rise.d2{animation-delay:.18s}.rise.d3{animation-delay:.28s}
 @keyframes rise{to{opacity:1;transform:none}}
+/* Mobiili: vaakakuva 52 %:n pystykaistana zoomautui abstraktiksi silpuksi.
+   Puhelimella kuva on koko leveyden vyo ylhaalla ja teksti alkaa sen alta. */
+@media(max-width:920px){
+  .hero{align-items:flex-end}
+  .hero-img{width:100%;height:44dvh;bottom:auto;background-position:62% 32%;
+    animation:none;
+    -webkit-mask-image:linear-gradient(180deg,#000 0%,#000 60%,transparent 100%);
+    mask-image:linear-gradient(180deg,#000 0%,#000 60%,transparent 100%)}
+  .hero-veil{background:linear-gradient(180deg,rgba(7,11,20,.5) 0%,rgba(7,11,20,.06) 16dvh,
+    rgba(7,11,20,.3) 30dvh,rgba(7,11,20,.94) 42dvh,var(--bg) 50dvh)}
+  .hero .wrap{padding-top:40dvh;padding-bottom:44px}
+  .hero .lead{font-size:1rem;margin-top:16px}
+  .hero-cta{margin-top:26px}
+}
 
 /* ---------- marquee ---------- */
 .marq{border-bottom:1px solid var(--line);background:var(--bg2);overflow:hidden;padding:15px 0}
