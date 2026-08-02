@@ -75,23 +75,23 @@ nav>a:hover::after{right:0}
 .hero{position:relative;min-height:100dvh;display:flex;align-items:center;overflow:hidden;
   border-bottom:1px solid var(--line)}
 /* Isin toive 2.8.: ruletti hiukan kirkkaammin, ei paljon. */
-.hero-img{position:absolute;top:0;right:0;bottom:0;width:52%;
-  background:url('assets/fgc-4-up.jpg') 60% 40%/cover no-repeat;
-  filter:saturate(1.28) brightness(1.18);transform-origin:70% 40%;
-  -webkit-mask-image:linear-gradient(100deg,transparent 4%,rgba(0,0,0,.58) 24%,#000 48%);
-  mask-image:linear-gradient(100deg,transparent 4%,rgba(0,0,0,.58) 24%,#000 48%);
+.hero-img{position:absolute;top:0;left:0;bottom:0;width:52%;
+  background:url('assets/fgc-4-up.jpg') 42% 40%/cover no-repeat;
+  filter:saturate(1.28) brightness(1.18);transform-origin:30% 40%;
+  -webkit-mask-image:linear-gradient(260deg,transparent 4%,rgba(0,0,0,.58) 24%,#000 48%);
+  mask-image:linear-gradient(260deg,transparent 4%,rgba(0,0,0,.58) 24%,#000 48%);
   animation:kenburns 44s ease-in-out infinite alternate}
 @keyframes kenburns{to{transform:scale(1.05)}}
 .hero-veil{position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(95deg,rgba(7,11,20,.96) 32%,rgba(7,11,20,.64) 58%,rgba(7,11,20,.06) 80%),
+  background:linear-gradient(265deg,rgba(7,11,20,.96) 32%,rgba(7,11,20,.64) 58%,rgba(7,11,20,.06) 80%),
              linear-gradient(180deg,rgba(7,11,20,.4),transparent 30%,transparent 70%,var(--bg) 98%)}
-.hero .wrap{position:relative;padding-top:96px;padding-bottom:60px}
+.hero .wrap{position:relative;padding-top:96px;padding-bottom:60px;display:flex;flex-direction:column;align-items:flex-end;text-align:right}
 .eyebrow{display:inline-block;font-size:.82rem;font-weight:700;
   letter-spacing:.07em;text-transform:uppercase;color:var(--acc-soft);margin-bottom:20px}
 .hero h1{font-size:clamp(2.5rem,6vw,5.1rem);max-width:24ch}
 .hero h1 em{font-style:normal;color:var(--acc-soft)}
 .hero .lead{max-width:46ch;margin-top:24px;font-size:1.1rem;color:#C5CFDF}
-.hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.hero-cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;justify-content:flex-end}
 .rise{opacity:0;transform:translateY(26px);animation:rise .9s cubic-bezier(.16,1,.3,1) forwards}
 .rise.d1{animation-delay:.08s}.rise.d2{animation-delay:.18s}.rise.d3{animation-delay:.28s}
 @keyframes rise{to{opacity:1;transform:none}}
@@ -105,7 +105,8 @@ nav>a:hover::after{right:0}
     mask-image:linear-gradient(180deg,#000 0%,#000 60%,transparent 100%)}
   .hero-veil{background:linear-gradient(180deg,rgba(7,11,20,.5) 0%,rgba(7,11,20,.06) 16dvh,
     rgba(7,11,20,.3) 30dvh,rgba(7,11,20,.94) 42dvh,var(--bg) 50dvh)}
-  .hero .wrap{padding-top:40dvh;padding-bottom:44px}
+  .hero .wrap{padding-top:40dvh;padding-bottom:44px;align-items:flex-start;text-align:left}
+  .hero-cta{justify-content:flex-start}
   .hero .lead{font-size:1rem;margin-top:16px}
   .hero-cta{margin-top:26px}
 }
