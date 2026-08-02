@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Finnish Gambling Consultants, konseptiuudistus</title>
-<meta name="description" content="Rahapelialan konsulttitoimisto: strategia, digitalisaatio ja uudet pelituotteet arpajais- ja peliyhtiöille.">
+<title>Finnish Gambling Consultants, concept redesign</title>
+<meta name="description" content="Consultancy for the lottery and gambling business: strategy, digitalisation and new game verticals.">
 <meta property="og:title" content="Finnish Gambling Consultants">
-<meta property="og:description" content="Rahapeliala. Sisältä opittu.">
+<meta property="og:description" content="Gambling. Learned from the inside.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,20 +73,21 @@ nav>a:hover::after{right:0}
 .aurora i:nth-child(2){width:38vw;height:38vw;right:-6vw;bottom:-10vw;background:radial-gradient(circle,rgba(224,53,111,.34),transparent 65%);animation:drift2 32s ease-in-out infinite alternate}
 @keyframes drift1{to{transform:translate(9vw,7vw) scale(1.12)}}
 @keyframes drift2{to{transform:translate(-8vw,-6vw) scale(1.18)}}
+/* Isin toive 2.8.: ruletti hiukan kirkkaammin, ei paljon. */
 .hero-img{position:absolute;top:0;right:0;bottom:0;width:52%;
   background:url('assets/fgc-4-1920x1080_1.jpg') 60% 40%/cover no-repeat;
-  filter:saturate(1.25) brightness(1.06);transform-origin:70% 40%;
-  -webkit-mask-image:linear-gradient(100deg,transparent 4%,rgba(0,0,0,.5) 26%,#000 52%);
-  mask-image:linear-gradient(100deg,transparent 4%,rgba(0,0,0,.5) 26%,#000 52%);
+  filter:saturate(1.28) brightness(1.18);transform-origin:70% 40%;
+  -webkit-mask-image:linear-gradient(100deg,transparent 4%,rgba(0,0,0,.58) 24%,#000 48%);
+  mask-image:linear-gradient(100deg,transparent 4%,rgba(0,0,0,.58) 24%,#000 48%);
   animation:kenburns 30s ease-in-out infinite alternate}
 @keyframes kenburns{to{transform:scale(1.12)}}
 .hero-veil{position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(95deg,rgba(7,11,20,.95) 30%,rgba(7,11,20,.55) 55%,rgba(7,11,20,.15) 78%),
+  background:linear-gradient(95deg,rgba(7,11,20,.96) 32%,rgba(7,11,20,.64) 58%,rgba(7,11,20,.06) 80%),
              linear-gradient(180deg,rgba(7,11,20,.4),transparent 30%,transparent 70%,var(--bg) 98%)}
 .hero .wrap{position:relative;padding-top:96px;padding-bottom:60px}
 .eyebrow{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.72rem;
   letter-spacing:.24em;text-transform:uppercase;color:var(--acc-soft);margin-bottom:22px}
-.hero h1{font-size:clamp(2.7rem,7vw,5.9rem);max-width:15ch}
+.hero h1{font-size:clamp(2.5rem,6vw,5.1rem);max-width:24ch}
 .hero h1 em{font-style:normal;color:transparent;background:linear-gradient(92deg,var(--acc-soft),var(--acc));
   -webkit-background-clip:text;background-clip:text}
 .hero .lead{max-width:46ch;margin-top:24px;font-size:1.1rem;color:#C5CFDF}
@@ -119,7 +120,7 @@ section{padding:96px 0}
 .sect-h h2{font-size:clamp(2.1rem,4.4vw,3.3rem)}
 .sect-h p{margin-top:14px;font-size:1.02rem}
 
-/* ---------- keille: bento ---------- */
+/* ---------- clients: bento ---------- */
 .keille{background:var(--bg2);border-block:1px solid var(--line)}
 .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
 .cell{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line2);
@@ -140,7 +141,7 @@ section{padding:96px 0}
 .cell.d{grid-column:span 7}
 @media(max-width:860px){.cell.a,.cell.b,.cell.c,.cell.d{grid-column:span 12}}
 
-/* ---------- palvelut ---------- */
+/* ---------- services ---------- */
 .serv{counter-reset:s}
 .serv-row{display:grid;grid-template-columns:110px 1fr 1.15fr;gap:26px;align-items:baseline;
   padding:34px 0;border-top:1px solid var(--line)}
@@ -154,7 +155,7 @@ section{padding:96px 0}
 @media(max-width:860px){.serv-row{grid-template-columns:1fr;gap:8px;padding:26px 0}
   .serv-row .no{font-size:1.7rem}}
 
-/* ---------- ihmiset ---------- */
+/* ---------- people ---------- */
 .people{background:var(--bg2);border-block:1px solid var(--line)}
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 @media(max-width:860px){.duo{grid-template-columns:1fr}}
@@ -176,7 +177,7 @@ section{padding:96px 0}
 .person .contact .k{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--mut);
   width:52px;text-transform:uppercase;letter-spacing:.08em}
 
-/* ---------- verkosto ---------- */
+/* ---------- network ---------- */
 .net{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 40px}
 @media(max-width:860px){.net{grid-template-columns:1fr}}
 .net-item{padding:22px 0 22px 24px;border-left:2px solid var(--line2);transition:border-color .25s}
@@ -185,7 +186,7 @@ section{padding:96px 0}
 .net-item .firm{color:var(--acc-soft);font-size:.85rem;font-weight:600;margin:2px 0 8px}
 .net-item p{font-size:.92rem}
 
-/* ---------- nakemys ---------- */
+/* ---------- point of view ---------- */
 .quote{background:var(--bg2);border-block:1px solid var(--line);position:relative;overflow:hidden}
 .quote .bgq{position:absolute;inset:0;background:url('assets/fgc-3-1920x1080.jpg') center/cover;
   opacity:.14;filter:blur(3px) saturate(1.3)}
@@ -198,17 +199,25 @@ section{padding:96px 0}
 .quote .who{margin-top:26px;font-size:.92rem;color:var(--mut)}
 .quote .who b{color:var(--body);font-weight:600}
 
-/* ---------- yhteys ---------- */
+/* ---------- contact ---------- */
 .cta-panel{position:relative;border-radius:26px;padding:2px;
   background:linear-gradient(120deg,var(--blue),var(--acc) 60%,var(--acc-soft))}
 .cta-in{background:linear-gradient(120deg,#0B1120,#101A30);border-radius:24px;
-  padding:clamp(36px,6vw,64px);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+  padding:clamp(36px,6vw,64px);display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;
+  position:relative;overflow:hidden}
+/* Isin toive 2.8.: hevoset ja urheilu taustalle. Yhtion oma kollaasi, jossa
+   ravihevoset, jalkapallo ja jaakiekko; sumennettuna ja tummana tekstin alla. */
+.cta-bg{position:absolute;inset:0;background:url('assets/fgc-cover-1920x1080.jpg') center 30%/cover;
+  opacity:.42;filter:saturate(1.15) brightness(.62) contrast(1.08)}
+.cta-veil{position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(11,17,32,.96) 10%,rgba(11,17,32,.84) 45%,rgba(11,17,32,.52) 78%,rgba(11,17,32,.42))}
+.cta-in>div:not(.cta-bg):not(.cta-veil){position:relative;z-index:1}
 @media(max-width:860px){.cta-in{grid-template-columns:1fr}}
 .cta-in h2{font-size:clamp(2rem,4.2vw,3.1rem)}
 .cta-in .sub{margin-top:14px;max-width:44ch}
 .cta-side{display:flex;flex-direction:column;gap:12px}
 .cta-side .btn{justify-content:center;padding:15px 24px}
-.cta-side .note{font-size:.84rem;color:var(--mut);text-align:center}
+.cta-side .note{font-size:.84rem;color:#A9B4C8;text-align:center;text-shadow:0 1px 8px rgba(7,11,20,.8)}
 
 /* ---------- footer ---------- */
 footer{padding:60px 0 44px;font-size:.88rem}
@@ -243,11 +252,11 @@ footer a{color:var(--body)}footer a:hover{color:var(--ink)}
       <b>Finnish <i>Gambling</i> Consultants</b>
     </a>
     <nav>
-      <a href="#keille">Asiakkaat</a>
-      <a href="#palvelut">Palvelut</a>
-      <a href="#ihmiset">Ihmiset</a>
-      <a href="#verkosto">Verkosto</a>
-      <a class="btn" href="mailto:jari.vahanen@finnishgc.fi">Varaa keskustelu</a>
+      <a href="#clients">Clients</a>
+      <a href="#services">Services</a>
+      <a href="#people">People</a>
+      <a href="#network">Network</a>
+      <a class="btn" href="mailto:jari.vahanen@finnishgc.fi">Book a conversation</a>
     </nav>
   </div>
 </header>
@@ -257,110 +266,110 @@ footer a{color:var(--body)}footer a:hover{color:var(--ink)}
   <div class="hero-img" aria-hidden="true"></div>
   <div class="hero-veil" aria-hidden="true"></div>
   <div class="wrap">
-    <span class="eyebrow rise">Rahapelialan konsulttitoimisto</span>
-    <h1 class="rise d1">Rahapeliala.<br><em>Sisältä opittu.</em></h1>
-    <p class="lead rise d2">Autamme arpajais- ja peliyhtiöitä strategiassa, digitalisaatiossa
-       ja uusissa pelituotteissa. Kokemus on kertynyt alan johtotehtävistä, ei kalvosarjoista.</p>
+    <span class="eyebrow rise">Consultancy for the gambling business</span>
+    <h1 class="rise d1">Gambling.<br><em>Learned from the inside.</em></h1>
+    <p class="lead rise d2">We help lotteries and operators with strategy, digitalisation
+       and new game verticals. Experience from executive roles, not slide decks.</p>
     <div class="hero-cta rise d3">
-      <a class="btn" href="mailto:jari.vahanen@finnishgc.fi">Varaa keskustelu <span class="ar">→</span></a>
-      <a class="btn ghost" href="#palvelut">Katso palvelut</a>
+      <a class="btn" href="mailto:jari.vahanen@finnishgc.fi">Book a conversation <span class="ar">→</span></a>
+      <a class="btn ghost" href="#services">See services</a>
     </div>
   </div>
 </div>
 
 <div class="marq" aria-hidden="true">
   <div class="marq-in">
-    <span><b></b>Lotot<b></b>Urheiluvedonlyönti<b></b>Totopelit<b></b>Digitalisaatio<b></b>Strategia<b></b>Tuoteportfoliot<b></b>Data<b></b>Uudet liiketoimintamallit</span>
-    <span><b></b>Lotot<b></b>Urheiluvedonlyönti<b></b>Totopelit<b></b>Digitalisaatio<b></b>Strategia<b></b>Tuoteportfoliot<b></b>Data<b></b>Uudet liiketoimintamallit</span>
+    <span><b></b>Lotteries<b></b>Sports betting<b></b>Horse betting<b></b>Digitalisation<b></b>Strategy<b></b>Game portfolios<b></b>Data<b></b>New business models</span>
+    <span><b></b>Lotteries<b></b>Sports betting<b></b>Horse betting<b></b>Digitalisation<b></b>Strategy<b></b>Game portfolios<b></b>Data<b></b>New business models</span>
   </div>
 </div>
 
 <div class="stats">
   <div class="wrap grid">
-    <div class="stat rv"><b data-count="1996">0</b><span>maailman ensimmäinen verkkolotto avattiin, digiliiketoiminta Jarin johdossa</span></div>
-    <div class="stat rv l1"><b data-count="20"><i>+</i></b><span>vuotta rahapelialan johtotehtäviä kummallakin osakkaalla</span></div>
-    <div class="stat rv l2"><b data-count="2020">0</b><span>toimisto perustettiin palvelemaan alaa maailmanlaajuisesti</span></div>
-    <div class="stat rv l3"><b data-count="4">0</b><span>asiakasryhmää arpajaisyhtiöistä sisällöntuottajiin</span></div>
+    <div class="stat rv"><b data-count="1996">0</b><span>the world's first online lottery launched, digital business led by Jari</span></div>
+    <div class="stat rv l1"><b data-count="20"><i>+</i></b><span>years of gambling-industry executive roles behind each partner</span></div>
+    <div class="stat rv l2"><b data-count="2020">0</b><span>the firm was founded to serve the industry worldwide</span></div>
+    <div class="stat rv l3"><b data-count="4">0</b><span>client groups, from lotteries to content suppliers</span></div>
   </div>
 </div>
 
-<section class="keille" id="keille">
+<section class="keille" id="clients">
   <div class="wrap">
     <div class="sect-h rv">
-      <h2>Keitä autamme</h2>
-      <p>Neljä asiakasryhmää, yksi yhteinen nimittäjä: rahapeliliiketoiminta, jota halutaan viedä eteenpäin.</p>
+      <h2>Who we help</h2>
+      <p>Four client groups with one thing in common: a gambling business someone wants to take forward.</p>
     </div>
     <div class="bento">
       <article class="cell a rv"><div class="bgi" style="background-image:url('assets/fgc-3-1920x1080.jpg')"></div>
-        <div><h3>Arpajaisyhtiöt</h3>
-        <p>Liiketoiminnan kehitys, uudet tuotealueet, digitalisointi ja asiakaslähtöisempi toiminta.
-           Strategiasta käytäntöön asti, kumppanien valintaa myöten.</p></div>
+        <div><h3>Lotteries</h3>
+        <p>Business development, new product verticals, digitalisation and more customer-centric
+           operations. From strategy to execution, down to choosing the right partners and suppliers.</p></div>
       </article>
       <article class="cell b rv l1"><div class="bgi" style="background-image:url('assets/fgc-4-1920x1080_1.jpg')"></div>
-        <div><h3>Peliyhtiöt</h3>
-        <p>Uudet pelimuodot kuten hevos- ja urheiluvedonlyönti sekä lotto, ja suunnitelma uusille markkinoille.</p></div>
+        <div><h3>Gambling operators</h3>
+        <p>New verticals such as horse betting, sports betting and lottery, plus plans for entering new markets.</p></div>
       </article>
       <article class="cell c rv"><div class="bgi" style="background-image:url('assets/fgc-7-1920x1080_1.jpg')"></div>
-        <div><h3>Teknologia- ja sisältötoimittajat</h3>
-        <p>Ymmärrys arpajaisyhtiöiden erityispiirteistä, tuotteiden kehittäminen niille ja uusien asiakkaiden löytäminen.</p></div>
+        <div><h3>Technology and content suppliers</h3>
+        <p>Understanding what makes lotteries different, developing products for them and finding new lottery customers.</p></div>
       </article>
       <article class="cell d rv l1"><div class="bgi" style="background-image:url('assets/fgc-6-1920x1080_1.jpg')"></div>
-        <div><h3>Alan muut yritykset ja yhteisöt</h3>
-        <p>Parempaa sisältöä peliyhtiöille sekä koulutusta rahapeliliiketoiminnasta tilaisuuksissa ja kirjallisesti.</p></div>
+        <div><h3>Other companies and organisations</h3>
+        <p>Better content for gambling operators, and education about the business in live events or in writing.</p></div>
       </article>
     </div>
   </div>
 </section>
 
-<section id="palvelut">
+<section id="services">
   <div class="wrap">
     <div class="sect-h rv">
-      <span class="eyebrow">Palvelut</span>
-      <h2>Mitä teemme</h2>
+      <span class="eyebrow">Services</span>
+      <h2>What we do</h2>
     </div>
     <div class="serv">
-      <div class="serv-row rv"><span class="no">01</span><h3>Nykytila-analyysit</h3>
-        <p>Arvioimme liiketoiminnan nykytilan ja annamme perustellut suositukset siitä, mistä kehittäminen kannattaa aloittaa.</p></div>
-      <div class="serv-row rv"><span class="no">02</span><h3>Strategiatyö</h3>
-        <p>Suunnittelemme yhtiön tai liiketoiminta-alueen strategiatyön ja tuotamme siihen sisältöä, emme pelkkää prosessia.</p></div>
-      <div class="serv-row rv"><span class="no">03</span><h3>Digitalisaatio</h3>
-        <p>Arvioimme nykyiset digitaaliset palvelut tai rakennamme kokonaan uuden ympäristön, ja koordinoimme koko hankkeen toimittajineen.</p></div>
-      <div class="serv-row rv"><span class="no">04</span><h3>Tuoteportfolion kehittäminen</h3>
-        <p>Arvioimme nykyisen valikoiman ja tuomme siihen uusia pelimuotoja, oikeille asiakasryhmille kohdennettuna.</p></div>
-      <div class="serv-row rv"><span class="no">05</span><h3>Puheenvuorot ja koulutus</h3>
-        <p>Puhujiksi, panelisteiksi tai kirjoittajiksi alan tilaisuuksiin, ja liiketoimintakoulutusta hallituksille ja kumppaneille.</p></div>
+      <div class="serv-row rv"><span class="no">01</span><h3>Situation analyses</h3>
+        <p>We analyse the current state of the business and give grounded recommendations on where development pays off first.</p></div>
+      <div class="serv-row rv"><span class="no">02</span><h3>Strategy work</h3>
+        <p>We plan the strategy work of a company or a business division and contribute content, not just process.</p></div>
+      <div class="serv-row rv"><span class="no">03</span><h3>Digitalisation</h3>
+        <p>We evaluate existing digital services or build a completely new environment, and coordinate the whole project, suppliers included.</p></div>
+      <div class="serv-row rv"><span class="no">04</span><h3>Portfolio development</h3>
+        <p>We assess the current game portfolio and bring in new verticals, targeted at the right customer segments.</p></div>
+      <div class="serv-row rv"><span class="no">05</span><h3>Speaking and education</h3>
+        <p>Speakers, panelists and writers for industry events, and business education for boards and key partners.</p></div>
     </div>
   </div>
 </section>
 
-<section class="people" id="ihmiset">
+<section class="people" id="people">
   <div class="wrap">
     <div class="sect-h rv">
-      <h2>Kaksi osakasta, ei välikäsiä</h2>
-      <p>Työn tekevät samat ihmiset, joiden kanssa siitä sovitaan.</p>
+      <h2>Two partners, no handoffs</h2>
+      <p>The people you meet are the people who do the work.</p>
     </div>
     <div class="duo">
       <article class="person rv">
         <div class="mono-tile" aria-hidden="true">JV</div>
         <h3>Jari Vähänen</h3>
-        <p class="role">Strategia, vedonlyönti ja digitalisaatio</p>
-        <p>Vastasi Veikkauksen digitaalisen liiketoiminnan ensimmäisistä vuosista, kun yhtiö vei
-           lottopelit verkkoon ensimmäisenä maailmassa. Vahvin alue urheilu- ja hevosvedonlyönnissä
-           sekä strategiatyössä, suunnittelusta toteutukseen.</p>
+        <p class="role">Strategy, betting and digitalisation</p>
+        <p>Ran the first years of Veikkaus's digital business when the company took lottery games
+           online first in the world. Strongest in sports and horse betting and in strategy work,
+           from planning all the way to execution.</p>
         <div class="contact">
-          <a href="tel:+358400439661"><span class="k">puh</span>+358 400 439 661</a>
+          <a href="tel:+358400439661"><span class="k">tel</span>+358 400 439 661</a>
           <a href="mailto:jari.vahanen@finnishgc.fi"><span class="k">email</span>jari.vahanen@finnishgc.fi</a>
         </div>
       </article>
       <article class="person rv l1">
         <div class="mono-tile" aria-hidden="true">RA</div>
         <h3>Reijo Anttila</h3>
-        <p class="role">Totopelit, vedonlyönti ja tuotekehitys</p>
-        <p>Yli kaksikymmentä vuotta rahapelialan johtotehtäviä ja laaja kirjo strategisia ja
-           operatiivisia kehityshankkeita. Erityisalana totopelit, kiinteäkertoiminen vedonlyönti
-           ja asiakaslähtöinen tuotekehitys digitaalisissa peliympäristöissä.</p>
+        <p class="role">Pari-mutuel, fixed-odds betting and product development</p>
+        <p>More than twenty years of executive roles in the gambling industry and a wide range of
+           strategic and operational development projects. A specialist in pari-mutuel and
+           fixed-odds betting and customer-driven product development in digital ecosystems.</p>
         <div class="contact">
-          <a href="tel:+358405184917"><span class="k">puh</span>+358 40 518 4917</a>
+          <a href="tel:+358405184917"><span class="k">tel</span>+358 40 518 4917</a>
           <a href="mailto:reijo.anttila@finnishgc.fi"><span class="k">email</span>reijo.anttila@finnishgc.fi</a>
         </div>
       </article>
@@ -368,21 +377,21 @@ footer a{color:var(--body)}footer a:hover{color:var(--ink)}
   </div>
 </section>
 
-<section id="verkosto">
+<section id="network">
   <div class="wrap">
     <div class="sect-h rv">
-      <h2>Verkosto projektien tueksi</h2>
-      <p>Kun hanke vaatii enemmän käsiä, tuomme mukaan alan ammattilaisia, joiden kanssa olemme tehneet töitä ennenkin.</p>
+      <h2>A network behind the projects</h2>
+      <p>When a project needs more hands, we bring in professionals we have worked with before.</p>
     </div>
     <div class="net">
       <div class="net-item rv"><h3>Mark Knighton</h3><p class="firm">Obsidian Consultancy</p>
-        <p>Kaupallinen ja markkinointistrategia, viestintä ja vastuullinen pelaaminen.</p></div>
+        <p>Commercial and marketing strategy, public relations and responsible gambling.</p></div>
       <div class="net-item rv l1"><h3>Robin Bowler</h3><p class="firm">Way2Go Consulting</p>
-        <p>B2B- ja B2G-liiketoiminnan kehitys, tarjouskilpailut ja teknologian kaupallistaminen.</p></div>
+        <p>B2B and B2G business development, bid leadership and technology commercialisation.</p></div>
       <div class="net-item rv"><h3>Minna Ripatti</h3><p class="firm">Legal Gaming</p>
-        <p>Pelialan juridiikka: sopimukset, lisensointi, sääntely ja tietosuoja.</p></div>
-      <div class="net-item rv l1"><h3>E-urheilun ammattilaiset</h3><p class="firm">Kysy lisää meiltä</p>
-        <p>Huipputason e-urheiluosaajien ryhmä kilpapelaamiseen liittyviin hankkeisiin.</p></div>
+        <p>Gaming law: commercial agreements, licensing, regulatory requirements and data protection.</p></div>
+      <div class="net-item rv l1"><h3>Esports professionals</h3><p class="firm">Ask us for more</p>
+        <p>A group of top-level esports professionals for competitive-gaming projects.</p></div>
     </div>
   </div>
 </section>
@@ -391,27 +400,29 @@ footer a{color:var(--body)}footer a:hover{color:var(--ink)}
   <div class="bgq" aria-hidden="true"></div>
   <div class="wrap">
     <div class="rv">
-      <span class="eyebrow">Näkemys</span>
-      <blockquote>Rahapeli ei ole erillinen saareke. Asiakas hoitaa muunkin elämänsä verkossa,
-        ja sinne kuuluu myös lottokuponki.</blockquote>
-      <p class="who"><b>Jari Vähänen</b>, kirjoituksesta Digitalization of lottery business</p>
+      <span class="eyebrow">Point of view</span>
+      <blockquote>Lotteries should be part of normal life, available in digital channels
+        whenever customers want them there.</blockquote>
+      <p class="who"><b>Jari Vähänen</b>, from the essay Digitalization of lottery business</p>
     </div>
   </div>
 </section>
 
-<section id="yhteys">
+<section id="contact">
   <div class="wrap">
     <div class="cta-panel rv">
       <div class="cta-in">
+        <div class="cta-bg" aria-hidden="true"></div>
+        <div class="cta-veil" aria-hidden="true"></div>
         <div>
-          <h2>Puhutaanko teidän liiketoiminnastanne?</h2>
-          <p class="sub">Ensimmäinen keskustelu ei maksa mitään, ja siitä jää käteen
-             näkemys siitä, mihin tarttuisimme ensimmäisenä.</p>
+          <h2>Shall we talk about your business?</h2>
+          <p class="sub">The first conversation costs nothing, and you leave with our view
+             of what we would tackle first.</p>
         </div>
         <div class="cta-side">
-          <a class="btn" href="mailto:jari.vahanen@finnishgc.fi">Varaa keskustelu <span class="ar">→</span></a>
-          <a class="btn ghost" href="tel:+358400439661">Soita: +358 400 439 661</a>
-          <p class="note">Vastaamme suomeksi ja englanniksi.</p>
+          <a class="btn" href="mailto:jari.vahanen@finnishgc.fi">Book a conversation <span class="ar">→</span></a>
+          <a class="btn ghost" href="tel:+358400439661">Call +358 400 439 661</a>
+          <p class="note">We work in English and Finnish.</p>
         </div>
       </div>
     </div>
@@ -420,39 +431,39 @@ footer a{color:var(--body)}footer a:hover{color:var(--ink)}
 
 <footer>
   <div class="wrap">
-    <div class="f-demo"><b>Konseptidemo.</b> Tämän sivun rakensi Anton Jalonen ehdotukseksi finnishgc.fi-sivuston
-      uudistuksesta. Sisältö on koottu yhtiön nykyiseltä sivustolta, eikä sivua ole tehty toimeksiannosta.
-      Sivu ei näy hakukoneissa.</div>
+    <div class="f-demo"><b>Concept demo.</b> Built by Anton Jalonen as a redesign proposal for finnishgc.fi.
+      The content is compiled from the company's current site, and the page was not commissioned.
+      It is hidden from search engines.</div>
     <div class="f-top">
       <div>
         <div class="wordmark" style="margin-bottom:14px">
           <b>Finnish <i>Gambling</i> Consultants</b>
-          <span>Perustettu 2020</span>
+          <span>Founded 2020</span>
         </div>
-        <p style="max-width:38ch">Rahapelialan konsulttitoimisto arpajaisyhtiöille, peliyhtiöille
-           ja alan toimittajille.</p>
+        <p style="max-width:38ch">A consultancy for lotteries, gambling operators and the
+           suppliers who serve them.</p>
       </div>
       <div>
-        <h4>Sisältö</h4>
+        <h4>Content</h4>
         <ul>
-          <li><a href="#keille">Keitä autamme</a></li>
-          <li><a href="#palvelut">Palvelut</a></li>
-          <li><a href="#ihmiset">Ihmiset</a></li>
-          <li><a href="#verkosto">Verkosto</a></li>
+          <li><a href="#clients">Who we help</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#people">People</a></li>
+          <li><a href="#network">Network</a></li>
         </ul>
       </div>
       <div>
-        <h4>Yhteys</h4>
+        <h4>Contact</h4>
         <ul>
           <li><a href="mailto:jari.vahanen@finnishgc.fi">jari.vahanen@finnishgc.fi</a></li>
           <li><a href="mailto:reijo.anttila@finnishgc.fi">reijo.anttila@finnishgc.fi</a></li>
-          <li><a href="https://finnishgc.fi" rel="noopener nofollow">Nykyinen sivusto: finnishgc.fi</a></li>
+          <li><a href="https://finnishgc.fi" rel="noopener nofollow">Current site: finnishgc.fi</a></li>
         </ul>
       </div>
     </div>
     <div class="f-bottom">
       <span>© 2026 The Finnish Gambling Consultants Oy</span>
-      <span class="mono">Konseptiuudistus: antonjalonen.fi</span>
+      <span class="mono">Concept redesign: antonjalonen.fi</span>
     </div>
   </div>
 </footer>
@@ -463,7 +474,7 @@ footer a{color:var(--body)}footer a:hover{color:var(--ink)}
 (function(){
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Paljastukset rullatessa: hierarkia, sisalto saapuu lukujarjestyksessa.
+  // Scroll reveals: content arrives in reading order.
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){
       if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); }
@@ -473,7 +484,7 @@ footer a{color:var(--body)}footer a:hover{color:var(--ink)}
     if(reduce){ el.classList.add('on'); } else { io.observe(el); }
   });
 
-  // Lukulaskurit: korostavat faktoja, ajetaan kerran nakyviin tullessa.
+  // Count-up numbers: run once when the stat becomes visible.
   function count(el){
     var end=+el.dataset.count, t0=null, dur=1400,
         suffix=el.querySelector('i')?el.querySelector('i').outerHTML:'';
